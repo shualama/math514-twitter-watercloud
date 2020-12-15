@@ -35,7 +35,8 @@ def form():
         cloud = ""
         for each in tweets:
             cloud = cloud + each.text
-        cloud = WordCloud(background_color="white").generate(cloud)
+        cloud = WordCloud(background_color="white",
+                          stopwords=['https','http','www'],).generate(cloud)
         plt.axis('off')
         image = np.array(cloud)
 
