@@ -23,3 +23,4 @@ tweepy==3.9.0
 urllib3==1.26.2
 Werkzeug==1.0.1
 wordcloud==1.8.1
+anaconda-client==1.7.2
